@@ -1,7 +1,7 @@
 bl_info = {
     "name": "Quick Math Nodes",
     "author": "Fingar Bøen",
-    "version": (1, 0),
+    "version": (1, 0, 1),
     "blender": (4, 0, 0),
     "location": "Shader Editor",
     "description": "Adds create menu entries for quick math operations.",
