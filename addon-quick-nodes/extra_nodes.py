@@ -27,3 +27,19 @@ class MixColorOperator(bpy.types.Operator):
         bpy.ops.node.add_node(type='ShaderNodeMix')
         bpy.context.active_node.data_type = 'RGBA'
         return {'FINISHED'}
+    
+class Separate(bpy.types.Operator):
+    bl_idname = "qmn_node.add_separate_vector_node"
+    bl_label = "Split / Separate (Vector)"
+    
+    def execute(self, context):
+        bpy.ops.node.add_node(type='ShaderSeparateXYZ')
+        return {'FINISHED'}
+    
+class Separate(bpy.types.Operator):
+    bl_idname = "qmn_node.add_separate_color_node"
+    bl_label = "Split / Separate (Color)"
+    
+    def execute(self, context):
+        bpy.ops.node.add_node(type='ShaderSeparateColor')
+        return {'FINISHED'}

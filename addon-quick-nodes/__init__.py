@@ -1,10 +1,16 @@
 bl_info = {
-    "name": "Quick Math Nodes",
+    "name": "Quick Nodes",
     "author": "Fingar Bøen",
-    "version": (1, 0, 1),
+    "version": (1, 1, 0),
     "blender": (4, 0, 0),
-    "location": "Shader Editor",
-    "description": "Adds create menu entries for quick math operations.",
+    "location": "Shader Editor, Geometry Node Editor",
+    "description": """
+        Uses Blender 4.0's new search functionality to increase productivity 
+        in node editors by adding a bunch of new entries in the Add-menu. 
+        You can now search for nodes like 'Add', 'Multiply', 'Dot Product', 
+        'Lerp', etc., and this addon will create the correct blender node 
+        with the correct settings for that function.
+    """,
     "category": "Node",
 }
 
@@ -13,9 +19,9 @@ import importlib
 import inspect
 
 module_names = [
-    "shader_math_nodes",
-    "shader_vector_math_nodes",
-    "shader_extra_nodes",
+    "math_nodes",
+    "vector_math_nodes",
+    "extra_nodes",
 ]
 
 # Import and optionally reload modules, then collect classes
@@ -36,19 +42,24 @@ for name in module_names:
 
 # Custom menu stuff
 class NODE_MT_CustomMenu(bpy.types.Menu):
-    bl_label = "Quick Math Nodes"
+    bl_label = "Quick Nodes"
     bl_idname = "NODE_MT_CustomMenu"
     
     def draw(self, context):
         layout = self.layout
 
-        for cls in all_classes:
-            if hasattr(cls, "bl_idname") and hasattr(cls, "bl_label"):
-                layout.operator(cls.bl_idname, text=cls.bl_label)
+        if context.space_data.node_tree is not None:
+            for cls in all_classes:
+                if hasattr(cls, "bl_idname") and hasattr(cls, "bl_label"):
+                    layout.operator(cls.bl_idname, text=cls.bl_label)
+        else:
+            layout.label(text="No active node tree", icon='ERROR')            
+
 
 def shader_node_menu_func(self, context):
     layout = self.layout
-    layout.menu("NODE_MT_CustomMenu")
+    if context.space_data.tree_type in {'ShaderNodeTree', 'GeometryNodeTree'}:
+        layout.menu("NODE_MT_CustomMenu")
 
 # Resigter / Unregister
 def register():
