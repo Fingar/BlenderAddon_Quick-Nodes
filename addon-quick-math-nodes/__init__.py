@@ -11,23 +11,28 @@ bl_info = {
 import bpy
 import importlib
 import inspect
-from . import vector_math_nodes, math_nodes, extra_nodes
 
-# Reload modules if they are already loaded (useful during development)
-if "vector_math_nodes" in locals():
-    importlib.reload(vector_math_nodes)
+module_names = [
+    "shader_math_nodes",
+    "shader_vector_math_nodes",
+    "shader_extra_nodes",
+]
 
-if "math_nodes" in locals():
-    importlib.reload(math_nodes)
-
-if "extra_nodes" in locals():
-    importlib.reload(extra_nodes)
-
-# Combine all classes
-all_classes = [cls for name, cls in inspect.getmembers(math_nodes) if inspect.isclass(cls) and issubclass(cls, bpy.types.Operator)]
-all_classes += [cls for name, cls in inspect.getmembers(vector_math_nodes) if inspect.isclass(cls) and issubclass(cls, bpy.types.Operator)]
-all_classes += [cls for name, cls in inspect.getmembers(extra_nodes) if inspect.isclass(cls) and issubclass(cls, bpy.types.Operator)]
-
+# Import and optionally reload modules, then collect classes
+all_classes = []
+for name in module_names:
+    # Reload if already loaded (useful during development)
+    if name in locals():
+        importlib.reload(locals()[name])
+    
+    # Import module
+    module = importlib.import_module(f".{name}", __package__)
+    
+    # Collect classes from module
+    all_classes.extend([
+        cls for _, cls in inspect.getmembers(module)
+        if inspect.isclass(cls) and issubclass(cls, bpy.types.Operator)
+    ])
 
 # Custom menu stuff
 class NODE_MT_CustomMenu(bpy.types.Menu):

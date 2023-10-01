@@ -1,7 +1,7 @@
 import bpy
 
 class MixFloatOperator(bpy.types.Operator):
-    bl_idname = "node.add_float_mix_node"
+    bl_idname = "qmn_node.add_float_mix_node"
     bl_label = "Mix / Lerp (Float)"
     
     def execute(self, context):
@@ -11,7 +11,7 @@ class MixFloatOperator(bpy.types.Operator):
     
 
 class MixVectorOperator(bpy.types.Operator):
-    bl_idname = "node.add_vector_mix_node"
+    bl_idname = "qmn_node.add_vector_mix_node"
     bl_label = "Mix / Lerp (Vector)"
     
     def execute(self, context):
@@ -20,7 +20,7 @@ class MixVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class MixColorOperator(bpy.types.Operator):
-    bl_idname = "node.add_color_mix_node"
+    bl_idname = "qmn_node.add_color_mix_node"
     bl_label = "Mix / Lerp (Color)"
     
     def execute(self, context):

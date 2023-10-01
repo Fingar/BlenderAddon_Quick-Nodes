@@ -1,7 +1,7 @@
 import bpy
 
 class AddVectorOperator(bpy.types.Operator):
-    bl_idname = "node.add_vector_node"
+    bl_idname = "qmn_node.add_vector_node"
     bl_label = "Add (Vector Math)"
     
     def execute(self, context):
@@ -10,7 +10,7 @@ class AddVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class SubtractVectorOperator(bpy.types.Operator):
-    bl_idname = "node.subtract_vector_node"
+    bl_idname = "qmn_node.subtract_vector_node"
     bl_label = "Subtract (Vector Math)"
     
     def execute(self, context):
@@ -19,7 +19,7 @@ class SubtractVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class MultiplyVectorOperator(bpy.types.Operator):
-    bl_idname = "node.multiply_vector_node"
+    bl_idname = "qmn_node.multiply_vector_node"
     bl_label = "Multiply (Vector Math)"
     
     def execute(self, context):
@@ -28,7 +28,7 @@ class MultiplyVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class DivideVectorOperator(bpy.types.Operator):
-    bl_idname = "node.divide_vector_node"
+    bl_idname = "qmn_node.divide_vector_node"
     bl_label = "Divide (Vector Math)"
     
     def execute(self, context):
@@ -37,7 +37,7 @@ class DivideVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
     
 class MultiplyAddVectorOperator(bpy.types.Operator):
-    bl_idname = "node.multiply_add_vector_node"
+    bl_idname = "qmn_node.multiply_add_vector_node"
     bl_label = "Multiply Add (Vector Math)"
     
     def execute(self, context):
@@ -48,7 +48,7 @@ class MultiplyAddVectorOperator(bpy.types.Operator):
 
 
 class CrossProductVectorOperator(bpy.types.Operator):
-    bl_idname = "node.cross_product_vector_node"
+    bl_idname = "qmn_node.cross_product_vector_node"
     bl_label = "Cross Product (Vector Math)"
     
     def execute(self, context):
@@ -57,7 +57,7 @@ class CrossProductVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class ProjectVectorOperator(bpy.types.Operator):
-    bl_idname = "node.project_vector_node"
+    bl_idname = "qmn_node.project_vector_node"
     bl_label = "Project (Vector Math)"
     
     def execute(self, context):
@@ -66,7 +66,7 @@ class ProjectVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class ReflectVectorOperator(bpy.types.Operator):
-    bl_idname = "node.reflect_vector_node"
+    bl_idname = "qmn_node.reflect_vector_node"
     bl_label = "Reflect (Vector Math)"
     
     def execute(self, context):
@@ -75,7 +75,7 @@ class ReflectVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class RefractVectorOperator(bpy.types.Operator):
-    bl_idname = "node.refract_vector_node"
+    bl_idname = "qmn_node.refract_vector_node"
     bl_label = "Refract (Vector Math)"
     
     def execute(self, context):
@@ -84,7 +84,7 @@ class RefractVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class FaceForwardVectorOperator(bpy.types.Operator):
-    bl_idname = "node.faceforward_vector_node"
+    bl_idname = "qmn_node.faceforward_vector_node"
     bl_label = "Faceforward (Vector Math)"
     
     def execute(self, context):
@@ -93,7 +93,7 @@ class FaceForwardVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class DotProductVectorOperator(bpy.types.Operator):
-    bl_idname = "node.dot_product_vector_node"
+    bl_idname = "qmn_node.dot_product_vector_node"
     bl_label = "Dot Product (Vector Math)"
     
     def execute(self, context):
@@ -103,7 +103,7 @@ class DotProductVectorOperator(bpy.types.Operator):
 
 
 class DistanceVectorOperator(bpy.types.Operator):
-    bl_idname = "node.distance_vector_node"
+    bl_idname = "qmn_node.distance_vector_node"
     bl_label = "Distance (Vector Math)"
     
     def execute(self, context):
@@ -112,7 +112,7 @@ class DistanceVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class LengthVectorOperator(bpy.types.Operator):
-    bl_idname = "node.length_vector_node"
+    bl_idname = "qmn_node.length_vector_node"
     bl_label = "Length (Vector Math)"
     
     def execute(self, context):
@@ -121,7 +121,7 @@ class LengthVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class ScaleVectorOperator(bpy.types.Operator):
-    bl_idname = "node.scale_vector_node"
+    bl_idname = "qmn_node.scale_vector_node"
     bl_label = "Scale (Vector Math)"
     
     def execute(self, context):
@@ -130,7 +130,7 @@ class ScaleVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class NormalizeVectorOperator(bpy.types.Operator):
-    bl_idname = "node.normalize_vector_node"
+    bl_idname = "qmn_node.normalize_vector_node"
     bl_label = "Normalize (Vector Math)"
     
     def execute(self, context):
@@ -141,7 +141,7 @@ class NormalizeVectorOperator(bpy.types.Operator):
 
 
 class AbsoluteVectorOperator(bpy.types.Operator):
-    bl_idname = "node.absolute_vector_node"
+    bl_idname = "qmn_node.absolute_vector_node"
     bl_label = "Absolute (Vector Math)"
     
     def execute(self, context):
@@ -150,7 +150,7 @@ class AbsoluteVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class MinimumVectorOperator(bpy.types.Operator):
-    bl_idname = "node.minimum_vector_node"
+    bl_idname = "qmn_node.minimum_vector_node"
     bl_label = "Minimum (Vector Math)"
     
     def execute(self, context):
@@ -159,7 +159,7 @@ class MinimumVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class MaximumVectorOperator(bpy.types.Operator):
-    bl_idname = "node.maximum_vector_node"
+    bl_idname = "qmn_node.maximum_vector_node"
     bl_label = "Maximum (Vector Math)"
     
     def execute(self, context):
@@ -168,7 +168,7 @@ class MaximumVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class FloorVectorOperator(bpy.types.Operator):
-    bl_idname = "node.floor_vector_node"
+    bl_idname = "qmn_node.floor_vector_node"
     bl_label = "Floor (Vector Math)"
     
     def execute(self, context):
@@ -177,7 +177,7 @@ class FloorVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class CeilVectorOperator(bpy.types.Operator):
-    bl_idname = "node.ceil_vector_node"
+    bl_idname = "qmn_node.ceil_vector_node"
     bl_label = "Ceil (Vector Math)"
     
     def execute(self, context):
@@ -186,7 +186,7 @@ class CeilVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class FractionVectorOperator(bpy.types.Operator):
-    bl_idname = "node.fraction_vector_node"
+    bl_idname = "qmn_node.fraction_vector_node"
     bl_label = "Fraction (Vector Math)"
     
     def execute(self, context):
@@ -195,7 +195,7 @@ class FractionVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class ModuloVectorOperator(bpy.types.Operator):
-    bl_idname = "node.modulo_vector_node"
+    bl_idname = "qmn_node.modulo_vector_node"
     bl_label = "Modulo (Vector Math)"
     
     def execute(self, context):
@@ -204,7 +204,7 @@ class ModuloVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class WrapVectorOperator(bpy.types.Operator):
-    bl_idname = "node.wrap_vector_node"
+    bl_idname = "qmn_node.wrap_vector_node"
     bl_label = "Wrap (Vector Math)"
     
     def execute(self, context):
@@ -213,7 +213,7 @@ class WrapVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class SnapVectorOperator(bpy.types.Operator):
-    bl_idname = "node.snap_vector_node"
+    bl_idname = "qmn_node.snap_vector_node"
     bl_label = "Snap (Vector Math)"
     
     def execute(self, context):
@@ -224,7 +224,7 @@ class SnapVectorOperator(bpy.types.Operator):
 
 
 class SineVectorOperator(bpy.types.Operator):
-    bl_idname = "node.sine_vector_node"
+    bl_idname = "qmn_node.sine_vector_node"
     bl_label = "Sine (Vector Math)"
     
     def execute(self, context):
@@ -233,7 +233,7 @@ class SineVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class CosineVectorOperator(bpy.types.Operator):
-    bl_idname = "node.cosine_vector_node"
+    bl_idname = "qmn_node.cosine_vector_node"
     bl_label = "Cosine (Vector Math)"
     
     def execute(self, context):
@@ -242,7 +242,7 @@ class CosineVectorOperator(bpy.types.Operator):
         return {'FINISHED'}
 
 class TangentVectorOperator(bpy.types.Operator):
-    bl_idname = "node.tangent_vector_node"
+    bl_idname = "qmn_node.tangent_vector_node"
     bl_label = "Tangent (Vector Math)"
     
     def execute(self, context):
