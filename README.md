@@ -22,6 +22,8 @@ For example, if you select "Multiply (Vector Math)", it will add Blender's stand
 
 Because it makes it super quick to work with nodes.
 
+Tips: Use this together with Node Wrangler's Lazy Connect (Alt-RMB-drag, Shift-Alt-RMB-drag) and you'll be a node graph speed beast in no time!
+
 <br>
 
 <b>All the usual suspects are here; Add, Subtract, Multiply, etc.</b><br>
