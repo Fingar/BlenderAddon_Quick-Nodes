@@ -14,17 +14,27 @@ It simply enhances the node editor's 'Add" menu by adding new entries with helpf
 
 For example, if you select "Multiply (Vector Math)", it will add Blender's standard "Vector Math" node to your graph and set its operator to "Multiply," saving you valuable time.
 
+<br>
+
+<b>All the usual suspects are here; Add, Subtract, Multiply, etc.</b><br>
+![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_1.gif)
+
+<b>... and the rest too.</b><br>
+![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_2.gif)
+
+<b>And if you have been looking for a "Lerp" node in Blender, well now you can just search for "Lerp", <br>and it will give you the correct mix node.</b><br>
+![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_3.gif)
+
+Give it a try and simplify your Blender node workflow!
+
 ## Features
 - Adds menu entries for all 'Math' operators (Add, Subtract, Multiply, Clamp, Sine, etc.)
 - Adds menu entries for all 'Vector Math' operators (Add, Subtract, Multiply, Dot Product, Normalize, etc.)
 - Adds menu entries for 'Mix / Lerp' (Float/Vector/Color)
-- Works for both Shader Editor and Geometry Nodes! (yay!)
 
 ## Bug list
-- Some menu entries are available in all node editors, even those that don't support them.
-- Texture Nodes and Compositor are not supported.
-
-Give it a try and simplify your Blender node workflow!
+- Apparently it didn't work for geometry nodes like i first throught. But we might be able to fix that.
+- Texture Nodes and Compositor are not supported, even if the menu entries pop up there.
 
 ## Requirements
 
