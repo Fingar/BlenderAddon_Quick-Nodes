@@ -30,13 +30,13 @@ Because it makes it super quick to work with nodes.
 <b>... and the rest too.</b><br>
 ![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_2.gif)
 
-<b>And if you have been looking for a "Lerp" node in Blender, well now you can just search for "Lerp", <br>and it will give you the correct mix node.</b><br>
+<b>And if you have been looking for a "Lerp"-node in Blender, well now you can just search for "lerp", <br>and it will give you the correct Mix Node.</b><br>
 ![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_3.gif)
 
-<b>And yes, it supports geometry nodes too!.</b><br>
+<b>And yes, it supports Geometry Nodes!</b><br>
 ![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_4.png)
 
-<b>Oh, and compositor too!.</b><br>
+<b>Oh, and the Compositor!</b><br>
 ![](https://raw.githubusercontent.com/Fingar/BlenderAddon_Quick-Math-Nodes/main/Examples/QuickMathNodes_Example_5.png)
 
 <br>
