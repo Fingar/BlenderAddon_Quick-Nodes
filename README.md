@@ -3,10 +3,10 @@
 Tired of changing the operator-type of math nodes every time you want to do anything other than 'Add'?
 Ever wondered where the F%$&#$% Lerp node is?
 
-...Me too!
+...me too!
 
 So when I found out that Blender 4.0 added a great new search feature for nodes, I wrote this addon to make my life easier.
-Maybe it will you out too!
+Maybe it will help you out too!
 
 
 ## What does it do?
